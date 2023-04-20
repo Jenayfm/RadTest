@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  radtest.web:
+    image: ${DOCKER_REGISTRY-}radtestweb
+    build:
+      context: .
+      dockerfile: RADTest.Web\Dockerfile
